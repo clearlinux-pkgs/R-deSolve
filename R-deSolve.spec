@@ -4,7 +4,7 @@
 #
 Name     : R-deSolve
 Version  : 1.28
-Release  : 30
+Release  : 31
 URL      : https://cran.r-project.org/src/contrib/deSolve_1.28.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/deSolve_1.28.tar.gz
 Summary  : Solvers for Initial Value Problems of Differential Equations ('ODE', 'DAE', 'DDE')
