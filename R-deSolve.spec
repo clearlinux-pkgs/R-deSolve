@@ -4,10 +4,10 @@
 #
 Name     : R-deSolve
 Version  : 1.28
-Release  : 31
+Release  : 32
 URL      : https://cran.r-project.org/src/contrib/deSolve_1.28.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/deSolve_1.28.tar.gz
-Summary  : Solvers for Initial Value Problems of Differential Equations ('ODE', 'DAE', 'DDE')
+Summary  : Solvers for Initial Value Problems of Differential Equations
 Group    : Development/Tools
 License  : GPL-2.0+
 Requires: R-deSolve-lib = %{version}-%{release}
@@ -36,21 +36,22 @@ lib components for the R-deSolve package.
 
 %prep
 %setup -q -c -n deSolve
+cd %{_builddir}/deSolve
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583770158
+export SOURCE_DATE_EPOCH=1589515199
 
 %install
-export SOURCE_DATE_EPOCH=1583770158
+export SOURCE_DATE_EPOCH=1589515199
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
