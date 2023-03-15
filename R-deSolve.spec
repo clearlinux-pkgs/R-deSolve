@@ -4,7 +4,7 @@
 #
 Name     : R-deSolve
 Version  : 1.35
-Release  : 58
+Release  : 59
 URL      : https://cran.r-project.org/src/contrib/deSolve_1.35.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/deSolve_1.35.tar.gz
 Summary  : Solvers for Initial Value Problems of Differential Equations
