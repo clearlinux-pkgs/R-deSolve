@@ -4,10 +4,10 @@
 # Using build pattern: R
 #
 Name     : R-deSolve
-Version  : 1.36
-Release  : 62
-URL      : https://cran.r-project.org/src/contrib/deSolve_1.36.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/deSolve_1.36.tar.gz
+Version  : 1.38
+Release  : 63
+URL      : https://cran.r-project.org/src/contrib/deSolve_1.38.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/deSolve_1.38.tar.gz
 Summary  : Solvers for Initial Value Problems of Differential Equations
 Group    : Development/Tools
 License  : GPL-2.0+
@@ -46,10 +46,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1688414031
+export SOURCE_DATE_EPOCH=1693936288
 
 %install
-export SOURCE_DATE_EPOCH=1688414031
+export SOURCE_DATE_EPOCH=1693936288
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
